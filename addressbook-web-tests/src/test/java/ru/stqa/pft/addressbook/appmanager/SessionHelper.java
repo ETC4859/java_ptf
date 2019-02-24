@@ -7,7 +7,6 @@ public class SessionHelper {
   private WebDriver wd;
 
   public SessionHelper(WebDriver wd) {
-
     this.wd = wd;
   }
 
@@ -18,5 +17,4 @@ public class SessionHelper {
     wd.findElement(By.name("pass")).sendKeys(password);
     wd.findElement(By.id("LoginForm")).submit();
   }
-
 }
